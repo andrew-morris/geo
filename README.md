@@ -26,6 +26,7 @@ $ for i in $(cat /tmp/ips.txt);do geo $i;done
 * Fix geo2csv so it doesn't suck
 * Add support for online query options
 * Add update support for Geo.dat
+* Add decent exception handling
 
 ## DISCLAIMER
 
