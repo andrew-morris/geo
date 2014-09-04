@@ -4,11 +4,14 @@ try:
 	import pygeoip
 except:
 	print '[+] Please install pygeoip python module before continuing'
-        exit()
+	print '[+] Also pull down and extract the MaxMind database'
+	print '[+] $ wget -N http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz'
+    exit()
 import sys
 
 filename = sys.argv[0]
-geoDbPath = '/opt/GeoIP/GeoLiteCity.dat'
+geoDbPath = '/path/to/database.dat'
+
 
 def usage():
 	print '[+] Geo.py'
